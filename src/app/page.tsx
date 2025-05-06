@@ -4,10 +4,11 @@ import { Separator } from "@radix-ui/react-separator";
 import Image from "next/image";
 import Header from "./header";
 import Navbar from "./navbar";
-import { ArrowDownRight, ArrowUpRight, CalendarDays, ChevronDown, ClipboardCopy, ImagePlay, NotepadText, Store } from "lucide-react";
+import { ArrowDownRight, ArrowUpRight, CalendarDays, ChevronDown, ClipboardCopy, ImagePlay, NotepadText, Scroll, Store } from "lucide-react";
 import { Doughnut } from 'react-chartjs-2';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Button } from "@/components/ui/button";
+import { ScrollArea, ScrollAreaCorner } from "@radix-ui/react-scroll-area";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -247,29 +248,55 @@ export default function Home() {
     </div>
     
     {/* Doughnut and Labels */}
-    <div className="flex flex-row  gap-4">
-      <div className="flex flex-col px-2 text-sm text-black">
-        <div className="font-bold ">
-        Lucknow (78%)
-        <p className="font-light">1,358 total ventures</p>
-        </div>
 
-        <div className="font-bold ">
-        Delhi (78%)
-        <p className="font-light">1,358 total ventures</p>
-        </div>
+    <div className="flex flex-row p-0 m-0">
+    <div className="flex-shrink-0">
+    <Image src="/images/vertical.png" alt="image" width={60} height={200} className="h-[280px] w-[40px]" />
+  </div>
+    <ScrollArea className="h-[250px] w-[250px] pr-2 overflow-y-scroll scrollbar-thin scrollbar-thumb-[#94A3B8] scrollbar-track-[#E2E8F0]">
+    <div className="flex flex-col text-sm text-black gap-4">
+  <div className="flex items-start gap-2">
+    <div className="w-3 h-3 mt-1 bg-[#1E293B] rounded-full" />
+    <div>
+      <p className="font-bold">Lucknow (78%)</p>
+      <p className="font-light mt-1">1,358 total ventures</p>
+    </div>
+  </div>
 
-        <div className="font-bold ">
-        Mumbai (78%)
-        <p className="font-light">1,358 total ventures</p>
-        </div>
+  <div className="flex items-start gap-2">
+    <div className="w-3 h-3 mt-1 bg-[#1E293B33] rounded-full" />
+    <div>
+      <p className="font-bold">Delhi (78%)</p>
+      <p className="font-light mt-1">1,358 total ventures</p>
+    </div>
+  </div>
 
-        <div className="font-bold ">
-        Kolkata (78%)
-        <p className="font-light">1,358 total ventures</p>
-        </div>
+  <div className="flex items-start gap-2">
+    <div className="w-3 h-3 mt-1 bg-[#1E293B33] rounded-full" />
+    <div>
+      <p className="font-bold">Mumbai (78%)</p>
+      <p className="font-light mt-1">1,358 total ventures</p>
+    </div>
+  </div>
 
-      </div>
+  <div className="flex items-start gap-2">
+    <div className="w-3 h-3 mt-1 bg-[#1E293B33] rounded-full" />
+    <div>
+      <p className="font-bold">Kolkata (78%)</p>
+      <p className="font-light mt-1">1,358 total ventures</p>
+    </div>
+  </div>
+
+  <div className="flex items-start gap-2">
+    <div className="w-3 h-3 mt-1 bg-[#1E293B33] rounded-full" />
+    <div>
+      <p className="font-bold">Gujrat (78%)</p>
+      <p className="font-light mt-1">1,358 total ventures</p>
+    </div>
+  </div>
+
+</div>
+</ScrollArea>
       {/* Doughnut chart */}
       <div >
         <Doughnut data={data2} className="w-[180px] h-[130px]" />
