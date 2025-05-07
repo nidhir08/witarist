@@ -49,7 +49,7 @@ export default function Home() {
     <div className="flex flex-col w-full flex-grow">
     <Header />
     <Separator orientation="horizontal" className="w-full h-[2px] bg-[#E5E5E5] m-0"/>
-    <div className="px-10 text-2xl font-bold text-[#171718] mt-4 flex flex-row  gap-140 ">
+    <div className="px-10 text-2xl font-bold text-[#171718] mt-4 flex flex-row  gap-160 ">
     Dashboard
     <div className="flex flex-row gap-2 ml-4 text-[16px] font-medium text-[#475569] border-2 border-[#E2E8F0]  rounded-[15px] w-[310px] bg-white">
       <div className="flex flex-row gap-2 px-3 pt-2 pb-2 items-center">
@@ -408,7 +408,7 @@ export default function Home() {
 </div>
 
 {/* company */}
-<div className="flex flex-col w-[1127px] h-[800px] bg-[#FCFBFA] border-2 border-[#E5E5E5] rounded-[15px] text-[#475569] font-medium pt-4 pl-3 pr-3 gap-4 ml-5 mt-6 mr-4">
+<div className="flex flex-col w-[1127px] h-[875px] mb-4 bg-[#FCFBFA] border-2 border-[#E5E5E5] rounded-[15px] text-[#475569] font-medium pt-4 pl-3 pr-3 gap-4 ml-5 mt-6 mr-4">
   <div className="flex flex-row gap-100">
     <div className="flex flex-col">
       <div className="flex flex-row gap-2">
@@ -477,13 +477,17 @@ export default function Home() {
             
   {/* Col 1: Partner IT Companies */}
   <div className="flex items-center gap-4 px-10">
-    <input type="checkbox" className="w-4 h-4 accent-[#3366FF] rounded" />
+  <input
+  type="checkbox"
+  className="w-4 h-4 border border-[#D0D5DD] rounded accent-[#F9F5FF]  checked:border-[#1E293B]"
+/>
+
     <Image
       src="/images/logo1.jpg"
       alt="image"
       width={24}
       height={24}
-      className="w-6 h-6 rounded-full"
+      className="w-9 h-9 rounded-full"
     />
   </div>
 
@@ -497,18 +501,18 @@ export default function Home() {
     <span className="px-2.5 py-1 bg-[#E6FFED] text-[#2F855A] text-xs font-medium rounded-full">Python</span>
     <span className="px-2.5 py-1 bg-[#FFFBEB] text-[#744210] text-xs font-medium rounded-full">JavaScript</span>
     <span className="px-2.5 py-1 bg-[#FFF5F5] text-[#9B2C2C] text-xs font-medium rounded-full">Ruby</span>
-    <span className="px-2.5 py-1 bg-[#F7FAFC] text-[#4A5568] text-xs font-medium rounded-full">+4</span>
+    <span className="px-2.5 py-1 bg-[#F2F4F7] text-[#4A5568] text-xs font-medium rounded-full">+4</span>
   </div>
 
   {/* Col 4: Progress + Score */}
   <div className="flex items-center justify-end gap-3 w-full ml-10 mr-10">
   <div className="w-[140px] bg-[#E2E8F0] rounded-full h-2">
-    <div className="bg-[#3182CE] h-2 rounded-full" style={{ width: '85%' }}></div>
+    <div className="bg-[#1E293B] h-2 rounded-full" style={{ width: '60%' }}></div>
   </div>
   <div className="flex items-center gap-1">
     <span className="font-semibold">60</span>
-    <span className="text-[#48BB78] text-xs font-medium flex items-center">
-      <ChevronUp size={14} />
+    <span className="text-[#48BB78] bg-[#ECFDF3] p-1 rounded-[15px] text-xs font-bold gap-1 flex items-center">
+    <ArrowUp size={14} />
       5%
     </span>
   </div>
@@ -517,33 +521,13 @@ export default function Home() {
 
   {/* Col 5: Actions */}
   <div className="flex justify-end items-center mr-10">
-    <button className="p-2 border border-[#E2E8F0] rounded">
+    <button className="p-2 ">
       <Trash size={16} />
     </button>
-    <button className="p-2 border border-[#E2E8F0] rounded">
+    <button className="p-2 ">
       <Edit size={16} />
     </button>
   </div>
-
-
-
-
-        {/* Row 2 - Cloud Computing */}
-        
-              
-        
-        {/* Row 3 - Software Development */}
-        
-        {/* Row 4 - Graphic Design */}
-       
-        
-        {/* Row 5 - Networking */}
-        
-        
-        {/* Row 6 - Technical Support */}
-        
-        {/* Row 7 - Cybersecurity */}
-        
 
 
       </div>
@@ -553,13 +537,16 @@ export default function Home() {
             
   {/* Col 1: Partner IT Companies */}
   <div className="flex items-center gap-4 px-10">
-    <input type="checkbox" className="w-4 h-4 accent-[#3366FF] rounded" />
+  <input
+  type="checkbox"
+  className="w-4 h-4 border border-[#D0D5DD] rounded accent-[#F9F5FF]  checked:border-[#1E293B]"
+/>
     <Image
       src="/images/Circooles.jpg"
       alt="image"
       width={24}
       height={24}
-      className="w-6 h-6 rounded-full"
+      className="w-9 h-9 rounded-full"
     />
   </div>
 
@@ -573,18 +560,18 @@ export default function Home() {
   <span className="px-2.5 py-1 bg-[#EBF8FF] text-[#2C5282] text-xs font-medium rounded-full">Java</span>
             <span className="px-2.5 py-1 bg-[#EBF4FF] text-[#5A67D8] text-xs font-medium rounded-full">Visual Basic</span>
             <span className="px-2.5 py-1 bg-[#E6FFED] text-[#2F855A] text-xs font-medium rounded-full">Python</span>
-            <span className="px-2.5 py-1 bg-[#F7FAFC] text-[#4A5568] text-xs font-medium rounded-full">+2</span>
+            <span className="px-2.5 py-1 bg-[#F2F4F7] text-[#4A5568] text-xs font-medium rounded-full">+2</span>
   </div>
 
   {/* Col 4: Progress + Score */}
   <div className="flex items-center justify-end gap-3 w-full ml-10 mr-10">
   <div className="w-[140px] bg-[#E2E8F0] rounded-full h-2">
-    <div className="bg-[#3182CE] h-2 rounded-full" style={{ width: '90%' }}></div>
+    <div className="bg-[#1E293B] h-2 rounded-full" style={{ width: '72%' }}></div>
   </div>
   <div className="flex items-center gap-1">
     <span className="font-semibold">72</span>
-    <span className="text-[#E53E3E] text-xs font-medium flex items-center">
-              <ChevronDown size={14} />
+    <span className="text-[#E53E3E] bg-[#FEF3F2] p-1 rounded-[15px] text-xs font-bold flex items-center">
+    <ArrowDown size={14} />
               4%
             </span>
   </div>
@@ -593,10 +580,10 @@ export default function Home() {
 
   {/* Col 5: Actions */}
   <div className="flex justify-end items-center mr-10">
-    <button className="p-2 border border-[#E2E8F0] rounded">
+    <button className="p-2 ">
       <Trash size={16} />
     </button>
-    <button className="p-2 border border-[#E2E8F0] rounded">
+    <button className="p-2 ">
       <Edit size={16} />
     </button>
   </div>
@@ -608,39 +595,41 @@ export default function Home() {
             
   {/* Col 1: Partner IT Companies */}
   <div className="flex items-center gap-4 px-10">
-    <input type="checkbox" className="w-4 h-4 accent-[#3366FF] rounded" />
+  <input
+  type="checkbox"
+  className="w-4 h-4 border border-[#D0D5DD] rounded accent-[#F9F5FF]  checked:border-[#1E293B]"
+/>
     <Image
-      src="/images/Circooles.jpg"
+      src="/images/Refresh.jpg"
       alt="image"
       width={24}
       height={24}
-      className="w-6 h-6 rounded-full"
+      className="w-9 h-9 rounded-full"
     />
   </div>
 
   {/* Col 2: Specialized Industries */}
   <div className="whitespace-nowrap overflow-hidden text-ellipsis font-medium">
-  Cloud Computing
+  Software Development
   </div>
 
   {/* Col 3: Tags */}
   <div className="flex gap-1 whitespace-nowrap ml-[-15px]">
-  <span className="px-2.5 py-1 bg-[#EBF8FF] text-[#2C5282] text-xs font-medium rounded-full">Java</span>
-            <span className="px-2.5 py-1 bg-[#EBF4FF] text-[#5A67D8] text-xs font-medium rounded-full">Visual Basic</span>
-            <span className="px-2.5 py-1 bg-[#E6FFED] text-[#2F855A] text-xs font-medium rounded-full">Python</span>
-            <span className="px-2.5 py-1 bg-[#F7FAFC] text-[#4A5568] text-xs font-medium rounded-full">+2</span>
+  <span className="px-2.5 py-1 bg-[#E6FFED] text-[#2F855A] text-xs font-medium rounded-full">SQL</span>
+            <span className="px-2.5 py-1 bg-[#EBF8FF] text-[#3182CE] text-xs font-medium rounded-full">NoSQL</span>
+            <span className="px-2.5 py-1 bg-[#FFFBEB] text-[#744210] text-xs font-medium rounded-full">JavaScript</span>
   </div>
 
   {/* Col 4: Progress + Score */}
   <div className="flex items-center justify-end gap-3 w-full ml-10 mr-10">
   <div className="w-[140px] bg-[#E2E8F0] rounded-full h-2">
-    <div className="bg-[#3182CE] h-2 rounded-full" style={{ width: '90%' }}></div>
+    <div className="bg-[#1E293B] h-2 rounded-full" style={{ width: '78%' }}></div>
   </div>
   <div className="flex items-center gap-1">
-    <span className="font-semibold">72</span>
-    <span className="text-[#E53E3E] text-xs font-medium flex items-center">
-              <ChevronDown size={14} />
-              4%
+    <span className="font-semibold">78</span>
+    <span className="text-[#48BB78] bg-[#ECFDF3] p-1 rounded-[15px] text-xs font-bold flex items-center">
+    <ArrowUp size={14} />
+              6%
             </span>
   </div>
 </div>
@@ -648,10 +637,10 @@ export default function Home() {
 
   {/* Col 5: Actions */}
   <div className="flex justify-end items-center mr-10">
-    <button className="p-2 border border-[#E2E8F0] rounded">
+    <button className="p-2 ">
       <Trash size={16} />
     </button>
-    <button className="p-2 border border-[#E2E8F0] rounded">
+    <button className="p-2 ">
       <Edit size={16} />
     </button>
   </div>
@@ -663,39 +652,42 @@ export default function Home() {
             
   {/* Col 1: Partner IT Companies */}
   <div className="flex items-center gap-4 px-10">
-    <input type="checkbox" className="w-4 h-4 accent-[#3366FF] rounded" />
+  <input
+  type="checkbox"
+  className="w-4 h-4 border border-[#D0D5DD] rounded accent-[#F9F5FF]  checked:border-[#1E293B]"
+/>
     <Image
-      src="/images/Circooles.jpg"
+      src="/images/Hourglass.jpg"
       alt="image"
       width={24}
       height={24}
-      className="w-6 h-6 rounded-full"
+      className="w-9 h-9 rounded-full"
     />
   </div>
 
   {/* Col 2: Specialized Industries */}
   <div className="whitespace-nowrap overflow-hidden text-ellipsis font-medium">
-  Cloud Computing
+  Graphic Design
   </div>
 
   {/* Col 3: Tags */}
   <div className="flex gap-1 whitespace-nowrap ml-[-15px]">
-  <span className="px-2.5 py-1 bg-[#EBF8FF] text-[#2C5282] text-xs font-medium rounded-full">Java</span>
-            <span className="px-2.5 py-1 bg-[#EBF4FF] text-[#5A67D8] text-xs font-medium rounded-full">Visual Basic</span>
-            <span className="px-2.5 py-1 bg-[#E6FFED] text-[#2F855A] text-xs font-medium rounded-full">Python</span>
-            <span className="px-2.5 py-1 bg-[#F7FAFC] text-[#4A5568] text-xs font-medium rounded-full">+2</span>
+  <span className="px-2.5 py-1 bg-[#E6FFED] text-[#2F855A] text-xs font-medium rounded-full">Python</span>
+            <span className="px-2.5 py-1 bg-[#FFFBEB] text-[#744210] text-xs font-medium rounded-full">JavaScript</span>
+            <span className="px-2.5 py-1 bg-[#FFF5F5] text-[#9B2C2C] text-xs font-medium rounded-full">Ruby</span>
+            <span className="px-2.5 py-1 bg-[#F2F4F7] text-[#4A5568] text-xs font-medium rounded-full">+4</span>
   </div>
 
   {/* Col 4: Progress + Score */}
   <div className="flex items-center justify-end gap-3 w-full ml-10 mr-10">
   <div className="w-[140px] bg-[#E2E8F0] rounded-full h-2">
-    <div className="bg-[#3182CE] h-2 rounded-full" style={{ width: '90%' }}></div>
+    <div className="bg-[#1E293B] h-2 rounded-full" style={{ width: '38%' }}></div>
   </div>
   <div className="flex items-center gap-1">
-    <span className="font-semibold">72</span>
-    <span className="text-[#E53E3E] text-xs font-medium flex items-center">
-              <ChevronDown size={14} />
-              4%
+    <span className="font-semibold">38</span>
+    <span className="text-[#48BB78] bg-[#ECFDF3] p-1 rounded-[15px] text-xs font-bold flex items-center">
+    <ArrowUp size={14} />
+              8%
             </span>
   </div>
 </div>
@@ -703,10 +695,10 @@ export default function Home() {
 
   {/* Col 5: Actions */}
   <div className="flex justify-end items-center mr-10">
-    <button className="p-2 border border-[#E2E8F0] rounded">
+    <button className="p-2 ">
       <Trash size={16} />
     </button>
-    <button className="p-2 border border-[#E2E8F0] rounded">
+    <button className="p-2 ">
       <Edit size={16} />
     </button>
   </div>
@@ -718,19 +710,22 @@ export default function Home() {
             
   {/* Col 1: Partner IT Companies */}
   <div className="flex items-center gap-4 px-10">
-    <input type="checkbox" className="w-4 h-4 accent-[#3366FF] rounded" />
+  <input
+  type="checkbox"
+  className="w-4 h-4 border border-[#D0D5DD] rounded accent-[#F9F5FF]  checked:border-[#1E293B]"
+/>
     <Image
-      src="/images/Circooles.jpg"
+      src="/images/LogoSearch.png"
       alt="image"
       width={24}
       height={24}
-      className="w-6 h-6 rounded-full"
+      className="w-9 h-9 rounded-full"
     />
   </div>
 
   {/* Col 2: Specialized Industries */}
   <div className="whitespace-nowrap overflow-hidden text-ellipsis font-medium">
-  Cloud Computing
+  Networking
   </div>
 
   {/* Col 3: Tags */}
@@ -738,19 +733,19 @@ export default function Home() {
   <span className="px-2.5 py-1 bg-[#EBF8FF] text-[#2C5282] text-xs font-medium rounded-full">Java</span>
             <span className="px-2.5 py-1 bg-[#EBF4FF] text-[#5A67D8] text-xs font-medium rounded-full">Visual Basic</span>
             <span className="px-2.5 py-1 bg-[#E6FFED] text-[#2F855A] text-xs font-medium rounded-full">Python</span>
-            <span className="px-2.5 py-1 bg-[#F7FAFC] text-[#4A5568] text-xs font-medium rounded-full">+2</span>
+            <span className="px-2.5 py-1 bg-[#F2F4F7] text-[#4A5568] text-xs font-medium rounded-full">+2</span>
   </div>
 
   {/* Col 4: Progress + Score */}
   <div className="flex items-center justify-end gap-3 w-full ml-10 mr-10">
   <div className="w-[140px] bg-[#E2E8F0] rounded-full h-2">
-    <div className="bg-[#3182CE] h-2 rounded-full" style={{ width: '90%' }}></div>
+    <div className="bg-[#1E293B] h-2 rounded-full" style={{ width: '42%' }}></div>
   </div>
   <div className="flex items-center gap-1">
-    <span className="font-semibold">72</span>
-    <span className="text-[#E53E3E] text-xs font-medium flex items-center">
-              <ChevronDown size={14} />
-              4%
+    <span className="font-semibold">42</span>
+    <span className="text-[#E53E3E] bg-[#FEF3F2] p-1 rounded-[15px] text-xs font-medium flex items-center">
+    <ArrowDown size={14} />
+              1%
             </span>
   </div>
 </div>
@@ -758,10 +753,10 @@ export default function Home() {
 
   {/* Col 5: Actions */}
   <div className="flex justify-end items-center mr-10">
-    <button className="p-2 border border-[#E2E8F0] rounded">
+    <button className="p-2 ">
       <Trash size={16} />
     </button>
-    <button className="p-2 border border-[#E2E8F0] rounded">
+    <button className="p-2 ">
       <Edit size={16} />
     </button>
   </div>
@@ -773,39 +768,42 @@ export default function Home() {
             
   {/* Col 1: Partner IT Companies */}
   <div className="flex items-center gap-4 px-10">
-    <input type="checkbox" className="w-4 h-4 accent-[#3366FF] rounded" />
+  <input
+  type="checkbox"
+  className="w-4 h-4 border border-[#D0D5DD] rounded accent-[#F9F5FF]  checked:border-[#1E293B]"
+/>
     <Image
-      src="/images/Circooles.jpg"
+      src="/images/Quotient.jpg"
       alt="image"
       width={24}
       height={24}
-      className="w-6 h-6 rounded-full"
+      className="w-9 h-9 rounded-full"
     />
   </div>
 
   {/* Col 2: Specialized Industries */}
   <div className="whitespace-nowrap overflow-hidden text-ellipsis font-medium">
-  Cloud Computing
+  Technical Support
   </div>
 
   {/* Col 3: Tags */}
   <div className="flex gap-1 whitespace-nowrap ml-[-15px]">
-  <span className="px-2.5 py-1 bg-[#EBF8FF] text-[#2C5282] text-xs font-medium rounded-full">Java</span>
-            <span className="px-2.5 py-1 bg-[#EBF4FF] text-[#5A67D8] text-xs font-medium rounded-full">Visual Basic</span>
-            <span className="px-2.5 py-1 bg-[#E6FFED] text-[#2F855A] text-xs font-medium rounded-full">Python</span>
-            <span className="px-2.5 py-1 bg-[#F7FAFC] text-[#4A5568] text-xs font-medium rounded-full">+2</span>
+  <span className="px-2.5 py-1 bg-[#E6FFED] text-[#2F855A] text-xs font-medium rounded-full">Admin</span>
+            <span className="px-2.5 py-1 bg-[#EBF8FF] text-[#2A4365] text-xs font-medium rounded-full">Business data</span>
+            <span className="px-2.5 py-1 bg-[#EBF4FF] text-[#5A67D8] text-xs font-medium rounded-full">Admin</span>
+            <span className="px-2.5 py-1 bg-[#F2F4F7] text-[#4A5568] text-xs font-medium rounded-full">+4</span>
   </div>
 
   {/* Col 4: Progress + Score */}
   <div className="flex items-center justify-end gap-3 w-full ml-10 mr-10">
   <div className="w-[140px] bg-[#E2E8F0] rounded-full h-2">
-    <div className="bg-[#3182CE] h-2 rounded-full" style={{ width: '90%' }}></div>
+    <div className="bg-[#1E293B] h-2 rounded-full" style={{ width: '66%' }}></div>
   </div>
   <div className="flex items-center gap-1">
-    <span className="font-semibold">72</span>
-    <span className="text-[#E53E3E] text-xs font-medium flex items-center">
-              <ChevronDown size={14} />
-              4%
+    <span className="font-semibold">66</span>
+    <span className="text-[#E53E3E] bg-[#FEF3F2] p-1 rounded-[15px] text-xs font-medium flex items-center">
+    <ArrowDown size={14} />
+              6%
             </span>
   </div>
 </div>
@@ -813,10 +811,10 @@ export default function Home() {
 
   {/* Col 5: Actions */}
   <div className="flex justify-end items-center mr-10">
-    <button className="p-2 border border-[#E2E8F0] rounded">
+    <button className="p-2  ">
       <Trash size={16} />
     </button>
-    <button className="p-2 border border-[#E2E8F0] rounded">
+    <button className="p-2 ">
       <Edit size={16} />
     </button>
   </div>
@@ -828,39 +826,41 @@ export default function Home() {
             
   {/* Col 1: Partner IT Companies */}
   <div className="flex items-center gap-4 px-10">
-    <input type="checkbox" className="w-4 h-4 accent-[#3366FF] rounded" />
+  <input
+  type="checkbox"
+  className="w-4 h-4 border border-[#D0D5DD] rounded accent-[#F9F5FF]  checked:border-[#1E293B]"
+/>
     <Image
-      src="/images/Circooles.jpg"
+      src="/images/Sisyphus.jpg"
       alt="image"
-      width={24}
-      height={24}
-      className="w-6 h-6 rounded-full"
+      width={30}
+      height={30}
+      className="w-9 h-9 rounded-full"
     />
   </div>
 
   {/* Col 2: Specialized Industries */}
   <div className="whitespace-nowrap overflow-hidden text-ellipsis font-medium">
-  Cloud Computing
+  Cybersecurity
   </div>
 
   {/* Col 3: Tags */}
   <div className="flex gap-1 whitespace-nowrap ml-[-15px]">
-  <span className="px-2.5 py-1 bg-[#EBF8FF] text-[#2C5282] text-xs font-medium rounded-full">Java</span>
-            <span className="px-2.5 py-1 bg-[#EBF4FF] text-[#5A67D8] text-xs font-medium rounded-full">Visual Basic</span>
-            <span className="px-2.5 py-1 bg-[#E6FFED] text-[#2F855A] text-xs font-medium rounded-full">Python</span>
-            <span className="px-2.5 py-1 bg-[#F7FAFC] text-[#4A5568] text-xs font-medium rounded-full">+2</span>
+  <span className="px-2.5 py-1 bg-[#E6FFED] text-[#2F855A] text-xs font-medium rounded-full">SQL</span>
+            <span className="px-2.5 py-1 bg-[#EBF8FF] text-[#3182CE] text-xs font-medium rounded-full">NoSQL</span>
+            <span className="px-2.5 py-1 bg-[#FFFBEB] text-[#744210] text-xs font-medium rounded-full">JavaScript</span>
   </div>
 
   {/* Col 4: Progress + Score */}
   <div className="flex items-center justify-end gap-3 w-full ml-10 mr-10">
   <div className="w-[140px] bg-[#E2E8F0] rounded-full h-2">
-    <div className="bg-[#3182CE] h-2 rounded-full" style={{ width: '90%' }}></div>
+    <div className="bg-[#1E293B] h-2 rounded-full" style={{ width: '91%' }}></div>
   </div>
   <div className="flex items-center gap-1">
-    <span className="font-semibold">72</span>
-    <span className="text-[#E53E3E] text-xs font-medium flex items-center">
-              <ChevronDown size={14} />
-              4%
+    <span className="font-semibold">91</span>
+    <span className="text-[#48BB78] bg-[#ECFDF3] p-1 rounded-[15px] text-xs font-medium flex items-center">
+    <ArrowUp size={14} />
+              2%
             </span>
   </div>
 </div>
@@ -868,16 +868,28 @@ export default function Home() {
 
   {/* Col 5: Actions */}
   <div className="flex justify-end items-center mr-10">
-    <button className="p-2 border border-[#E2E8F0] rounded">
+    <button className="p-2 ">
       <Trash size={16} />
     </button>
-    <button className="p-2 border border-[#E2E8F0] rounded">
+    <button className="p-2 ">
       <Edit size={16} />
     </button>
   </div>
 
  </div>
+{/* Row8 */}
+<div className=" flex flex-row gap-x-160 px-1 py-4 border-b border-[#E2E8F0] items-center hover:bg-[#F8FAFC] text-sm text-[#4A5568]">
+  <div className="flex items-center gap-4 px-10 font-medium text-lg">
+    <h1>Page 1 of 10</h1>
+  </div>
+  <div className="flex items-center gap-4 px-10 ">
+    <Button className="text-[#64748B] border-[#D0D5DD] bg-[#FFFFFF] border-1">Previous</Button>
+    <Button className="text-[#1E293B] border-[#D0D5DD] bg-[#FFFFFF] border-1">Next</Button>
+  </div>
 
+ 
+  
+ </div>
   </div>
   </div>
 
