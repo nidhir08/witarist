@@ -42,23 +42,23 @@ export default function Home() {
   
   return (
     <>
-  <div className="flex flex-row min-h-screen h-auto w-full bg-[#FCFBFA]">
-  <div className=" w-[272px]">
+  <div className="flex lg:flex-row min-h-screen h-auto w-full bg-[#FCFBFA]">
+  <div className=" w-[272px] lg:w-[272px]">
     <Navbar />
     </div>
     <div className="flex flex-col w-full flex-grow">
     <Header />
     <Separator orientation="horizontal" className="w-full h-[1px] bg-[#E5E5E5] m-0"/>
-    <div className="px-10 text-2xl font-bold text-[#171718] mt-4 flex flex-row  gap-160 ">
-    Dashboard
-    <div className="flex flex-row gap-2 ml-4 text-[16px] font-medium text-[#475569] border-1 border-[#E2E8F0]  rounded-[15px] w-[310px] bg-white">
+    <div className="px-4 sm:px-6 md:px-10 text-2xl font-bold text-[#171718] mt-4 flex flex-row md:flex-row md:items-center md:justify-between gap-4 ">
+    <h1 className="text-2xl font-bold">Dashboard</h1>
+    <div className="flex flex-row sm:flex-row gap-2 text-[16px] font-medium text-[#475569] border border-[#E2E8F0] rounded-[15px] w-full sm:w-auto bg-white ml-6">
       <div className="flex flex-row gap-2 px-3 pt-2 pb-2 items-center">
     <CalendarDays />
-    Oct 18 - Nov 18
+    <span className="text-sm sm:text-base">Oct 18 - Nov 18</span>
     </div>
-    <Separator orientation="vertical" className="h-12 w-[1px] bg-[#E5E5E5] m-0"/>
-    <div className="flex flex-row gap-2 px-2 pt-2 items-center pb-2">
-    Monthly
+    <Separator orientation="vertical" className="h-12 w-[1px] hidden sm:block bg-[#E5E5E5] m-0"/>
+    <div className="flex flex-row gap-2 px-2 pt-2 items-center justify-between pb-2">
+    <span className="text-sm sm:text-base">Monthly</span>
     <ChevronDown />
     </div>
     </div>
@@ -66,10 +66,10 @@ export default function Home() {
 
 
      {/* componets */}
-<div className="flex flex-row bg-[#FCFBFA] mt-6 px-5 gap-3">
+<div className="flex flex-wrap bg-[#FCFBFA] mt-6 px-5 gap-3">
 
     {/* component1 */}
-<div className="flex flex-col w-[216px] h-[141px] bg-white border-1 border-[#E5E5E5] rounded-[15px] text-[#475569] font-medium pl-3 pr-3 gap-4">
+<div className="flex flex-col w-full sm:w-[48%] lg:w-[216px] h-[141px] bg-white border-1 border-[#E5E5E5] rounded-[15px] text-[#475569] font-medium pl-3 pr-3 gap-4">
   {/* Vendors Added Section (Text + Icon in same row) */}
   <div className="flex flex-row justify-between items-center gap-4">
     <div className="flex flex-col pt-3 text-[13px]">
@@ -98,7 +98,7 @@ export default function Home() {
 </div>
 
 {/* component2 */}
-<div className="flex flex-col w-[216px] h-[141px] bg-white border-1 border-[#E5E5E5] rounded-[15px] text-[#475569] font-medium pl-3 pr-3 gap-4">
+<div className="flex flex-col w-full sm:w-[48%] lg:w-[216px] h-[141px] bg-white border-1 border-[#E5E5E5] rounded-[15px] text-[#475569] font-medium pl-3 pr-3 gap-4">
   {/* Vendors Added Section (Text + Icon in same row) */}
   <div className="flex flex-row justify-between items-center gap-4">
     <div className="flex flex-col font-medium pt-3 text-[13px]">
@@ -127,7 +127,7 @@ export default function Home() {
 </div>
 
 {/* component3 */}
-<div className="flex flex-col w-[216px] h-[141px] bg-white border-1 border-[#E5E5E5] rounded-[15px] text-[#475569] font-medium pl-3 pr-3 gap-4">
+<div className="flex flex-col w-full sm:w-[48%] lg:w-[216px] h-[141px] bg-white border-1 border-[#E5E5E5] rounded-[15px] text-[#475569] font-medium pl-3 pr-3 gap-4">
   {/* Vendors Added Section (Text + Icon in same row) */}
   <div className="flex flex-row justify-between items-center gap-4">
     <div className="flex flex-col pt-3 text-[13px]">
@@ -157,7 +157,7 @@ export default function Home() {
 
 
 {/* component4 */}
-<div className="flex flex-col w-[216px] h-[141px] bg-white border-1 border-[#E5E5E5] rounded-[15px] text-[#475569] font-medium  pl-3 pr-3 gap-4">
+<div className="flex flex-col w-full sm:w-[48%] lg:w-[216px] h-[141px] bg-white border-1 border-[#E5E5E5] rounded-[15px] text-[#475569] font-medium  pl-3 pr-3 gap-4">
   {/* Vendors Added Section (Text + Icon in same row) */}
   <div className="flex flex-row justify-between items-center gap-4 ">
     <div className="flex flex-col pt-3 text-[13px] ">
@@ -186,7 +186,7 @@ export default function Home() {
 </div>
 
 {/* component5 */}
-<div className="flex flex-col w-[216px] h-[141px] bg-white border-1 border-[#E5E5E5] rounded-[15px] text-[#475569] font-medium  pl-3 pr-3 gap-4">
+<div className="flex flex-col w-full sm:w-[48%] lg:w-[216px] h-[141px] bg-white border-1 border-[#E5E5E5] rounded-[15px] text-[#475569] font-medium  pl-3 pr-3 gap-4">
   {/* Vendors Added Section (Text + Icon in same row) */}
   <div className="flex flex-row justify-between items-center gap-4">
     <div className="flex flex-col pt-3 text-[13px] ">
@@ -924,36 +924,8 @@ export default function Home() {
   </div>
   </div>
 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </div>
-
-
-  
-
-  
-
-    
-  
-    
-
 
     </>
   );

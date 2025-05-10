@@ -6,12 +6,12 @@ import { Bell, Search } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 const Header = () => {
   return (
-    <div className='flex flex-row gap-140'>
-    <div className='relative w-[300px] py-4 px-10 bg-white'>
+    <div className='flex flex-row sm:flex-row sm:items-center sm:justify-between gap-100  bg-white'>
+    <div className='relative  w-full sm:w-[300px] py-4 px-4'>
       <Input className='pl-10 pr-20 py-2  my-3 w-150  bg-[#F5F5F5]' placeholder="Search..."/>
       {/* <Image src="/images/search.png" alt="image" width={35} height={33} className="absolute right-3 top-1/2 pb-0  transform -translate-y-1/2"/> */}
-      <Button className="absolute w-10 h-6 mt-2 mb-2 left-148 top-[42%] transform -translate-y-1/2 bg-[#FFFFFF] text-black font-light px-2 py-2 text-sm rounded">⌘+K</Button>
-      <Search size={20} className='absolute right-58 top-1/2 pb-1 pt-1 transform -translate-y-1/2' />
+      <Button className="absolute w-10 h-6 mt-2 mb-2 left-140 top-[42%] transform -translate-y-1/2 bg-[#FFFFFF] text-black font-light px-2 py-2 text-sm rounded">⌘+K</Button>
+      <Search size={20} className='absolute left-8 top-1/2 pb-1 pt-1 transform -translate-y-1/2' />
     </div>
     <div className='flex flex-row items-center gap-1'>
     <Bell className='border-[#E5E5E5] border-1 p-4 w-14 h-14 rounded-[14px] '  />

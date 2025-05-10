@@ -41,11 +41,11 @@ export function Navbar() {
         <div>
               <Image src="/images/logo.png" alt="image" width={40} height={40} className='ml-8 mr-10 my-0'/>
         </div>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center  gap-4">
           <button className="text-gray-400 hover:text-white">
             <Bell size={20} />
           </button>
-          <button className="text-gray-400 hover:text-white" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <button className="text-gray-400 hover:text-white" >
             <Menu size={20} />
           </button>
         </div>
