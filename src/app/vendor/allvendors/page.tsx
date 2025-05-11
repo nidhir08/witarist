@@ -139,13 +139,16 @@ const AllVendor = () => {
             {/* Blue overlapping separator */}
             <div className="absolute h-[2px] bg-[#4886F5] w-23"></div>
           </div>
-        </div>
-        <div className="px-2 md:px-10 mt-4">
+</div>
 
-            <div className="flex flex-row ">
 
-              <div className=" bg-[#D9D9D9] w-[78%] h-auto min-h-[100px] md:h-[145px] rounded-lg sm:rounded-xl md:rounded-2xl p-2 md:p-2  ">
-                <div className="flex flex-col sm:flex-row gap-3 min-w-min pb-4">
+<div className="flex flex-col md:flex-row w-full px-2 md:px-10 mt-4 gap-4">
+
+            <div className="w-full md:w-[78%] flex flex-col gap-4">
+
+              <div className=" bg-[#D9D9D9]  rounded-lg sm:rounded-xl md:rounded-2xl p-2 ">
+                <div className="flex flex-row sm:flex-row  gap-3 min-w-min "> 
+                    {/* change this to flex-col */}
                   {/* Card 1 */}
                   <div className="flex flex-col max-w-[200px] md:w-[200px] min-w-[140px] sm:w-[150px] bg-white border border-[#E5E5E5] rounded-[15px] shadow-sm p-3">
                     {/* Card Header */}
@@ -261,18 +264,17 @@ const AllVendor = () => {
                   </div>
                 </div>
               </div>
-              <Separator 
-        orientation="vertical" 
-        className="hidden sm:block h-200 self-stretch bg-[#E3E3E4] w-[1px] mx-2" 
-      />
+          
    </div>
    </div>
 
 {/* resources allocation */}
   {/* Resource Allocation Section */}
-<div className="px-4 md:px-10 mt-4 w-full">
+<div className="flex flex-col md:flex-row md:items-stretch gap-4 w-full md:px-10 mt-4 items-stretch">
+    
+<div className=" md:w-[78%]  w-full">
   {/* Outer gray container */}
-  <div className="bg-[#D9D9D9] rounded-2xl p-4 md:p-2 md:w-[78%]">
+  <div className="bg-[#D9D9D9] rounded-2xl p-4 md:p-2 ">
     {/* Inner content: two boxes side-by-side or stacked */}
     <div className="flex flex-col md:flex-row gap-2 w-full">
       
@@ -291,7 +293,7 @@ const AllVendor = () => {
         {/* Doughnut + Labels */}
         <div className="flex flex-row lg:flex-row items-start gap-4 ">
           {/* Scrollbar Image */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 h-full flex items-center">
             <Image src="/images/scrollbar.png" alt="image" width={16} height={280} className="h-[160px] w-[16px]" />
           </div>
 
@@ -353,13 +355,17 @@ const AllVendor = () => {
         </div>
       </div>
 
+
 {/* Active Alignments Box */}
       <div className="bg-white border border-[#E5E5E5] rounded-[15px] flex flex-col text-[#475569] font-medium p-2 w-full md:w-1/3 relative">
-        <h2 className="text-xl text-black mb-4">Active Alignments(90%)</h2>
+      <div className="p-2 pb-0">
+        <h2 className="text-xl text-black mb-2">Active Alignments(90%)</h2>
+      </div>
 
         {/* Doughnut + Labels */}
-        <div className="flex flex-row items-center gap-2">
-        <div className="w-[130px] h-[130px]">
+        <div className="pb-16">
+        <div className="flex flex-row items-center gap-2 flex-wrap md:flex-nowrap">
+        <div className="w-[130px] h-[130px] relative">
   <Doughnut data={data} options={{ maintainAspectRatio: false }} />
 </div>
 
@@ -380,20 +386,37 @@ const AllVendor = () => {
             ))}
           </div>
         </div>
-
+        </div>
         {/* Bottom Button Bar */}
         <div className="absolute bottom-0 left-0 w-full bg-[#E8E8E8] rounded-b-[15px] px-4 py-3">
           <Button className="w-full text-black bg-white text-lg font-normal">
             View full report
           </Button>
         </div>
-      </div>
+</div>
     </div>
   </div>
 </div>
 
+  
+<div className="hidden md:block absolute top-0 bottom-0 left-[82%]">
+    <div className="bg-[#E3E3E4] w-[2px] mt-60 h-[800px]" />
+  </div>
+  
+  {/* Rest of content */}
+  <div className="md:w-[20%] w-full">
+    {/* Other content */}
+  </div>
+
+ 
+
+
+</div>
+
    </div>
+
    </div>
+  
 
         
     </div>
