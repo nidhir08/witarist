@@ -141,13 +141,16 @@ const AllVendor = () => {
           </div>
 </div>
 
+{/* left block  */}
+<div className='flex flex-row'>
+<div className="md:w-[78%] w-full  ">
+<div className="flex flex-col  md:items-stretch gap-4 w-full ">
+<div className="flex flex-row md:flex-row md:items-stretch gap-4 w-full md:px-10 mt-4 items-stretch">
 
-<div className="flex flex-col md:flex-row w-full px-2 md:px-10 mt-4 gap-4">
-
-            <div className="w-full md:w-[78%] flex flex-col gap-4">
+            <div className=" w-full  ">
 
               <div className=" bg-[#D9D9D9]  rounded-lg sm:rounded-xl md:rounded-2xl p-2 ">
-                <div className="flex flex-row sm:flex-row  gap-3 min-w-min "> 
+                <div className="flex flex-row sm:flex-row justify-between gap-3 overflow-x-auto "> 
                     {/* change this to flex-col */}
                   {/* Card 1 */}
                   <div className="flex flex-col max-w-[200px] md:w-[200px] min-w-[140px] sm:w-[150px] bg-white border border-[#E5E5E5] rounded-[15px] shadow-sm p-3">
@@ -181,8 +184,8 @@ const AllVendor = () => {
                     {/* Card Header */}
                     <div className="flex justify-between items-center">
                       <div>
-                        <p className="text-[13px] text-[#475569] font-medium">Bench Utilization Rate</p>
-                        <h2 className="text-black font-bold text-xl mt-1">34%</h2>
+                        <p className="text-[13px] text-[#475569] font-medium">Total Alignments</p>
+                        <h2 className="text-black font-bold text-xl mt-1">34</h2>
                       </div>
                       <div className="flex items-center justify-center w-[35px] h-[35px] bg-[#F5F5F5] rounded-md flex-shrink-0">
                         <svg className="w-5 h-5 text-[#475569]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -211,8 +214,8 @@ const AllVendor = () => {
                     {/* Card Header */}
                     <div className="flex justify-between items-center">
                       <div>
-                        <p className="text-[13px] text-[#475569] font-medium">Vendors Added</p>
-                        <h2 className="text-black font-bold text-xl mt-1">578</h2>
+                        <p className="text-[13px] text-[#475569] font-medium">Deployment</p>
+                        <h2 className="text-black font-bold text-xl mt-1">1</h2>
                       </div>
                       <div className="flex items-center justify-center w-[35px] h-[35px] bg-[#F5F5F5] rounded-md flex-shrink-0">
                         <Store className="w-5 h-5 text-[#475569]" />
@@ -238,8 +241,8 @@ const AllVendor = () => {
                     {/* Card Header */}
                     <div className="flex justify-between items-center">
                       <div>
-                        <p className="text-[13px] text-[#475569] font-medium">Bench Utilization Rate</p>
-                        <h2 className="text-black font-bold text-xl mt-1">34%</h2>
+                        <p className="text-[13px] text-[#475569] font-medium">Price Range </p>
+                        <h2 className="text-black font-bold text-xl mt-1">Min - Max </h2>
                       </div>
                       <div className="flex items-center justify-center w-[35px] h-[35px] bg-[#F5F5F5] rounded-md flex-shrink-0">
                         <svg className="w-5 h-5 text-[#475569]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -270,11 +273,11 @@ const AllVendor = () => {
 
 {/* resources allocation */}
   {/* Resource Allocation Section */}
-<div className="flex flex-col md:flex-row md:items-stretch gap-4 w-full md:px-10 mt-4 items-stretch">
+<div className="flex flex-row md:flex-row md:items-stretch gap-4 w-full md:px-10 mt-4 items-stretch">
     
-<div className=" md:w-[78%]  w-full">
+<div className="  w-full">
   {/* Outer gray container */}
-  <div className="bg-[#D9D9D9] rounded-2xl p-4 md:p-2 ">
+  <div className="bg-[#D9D9D9]  rounded-lg sm:rounded-xl md:rounded-2xl p-2 ">
     {/* Inner content: two boxes side-by-side or stacked */}
     <div className="flex flex-col md:flex-row gap-2 w-full">
       
@@ -396,7 +399,8 @@ const AllVendor = () => {
 </div>
     </div>   
   </div>
-
+</div>
+</div>
 {/* textarea  */}
   <div className='flex flex-col m-3'>
 <div className='flex flex-row font-bold text-medium gap-3'>
@@ -406,7 +410,7 @@ const AllVendor = () => {
    <span>0 comments</span>
     </div>
     <div className="ml-auto mt-2 sm:mt-0 flex items-center">
-            <div className="flex items-center border border-[#E2E8F0] bg-[#FFFFFF] text-[#475569] font-light rounded-lg px-3 py-1 text-sm whitespace-nowrap cursor-pointer">
+            <div className="flex items-center border border-[#E2E8F0] bg-[#FFFFFF] text-[#475569] font-medium rounded-lg px-3 py-1 text-sm whitespace-nowrap cursor-pointer">
               <span>Latest</span>
               <ChevronDown className="ml-1 w-4 h-4" />
             </div>
@@ -423,22 +427,83 @@ const AllVendor = () => {
     Publish
   </button>
 </div>
+
+<div className='flex flex-row mt-4'>
+<div className='relative w-10 h-10 md:w-20 md:h-10 rounded-full overflow-hidden'>
+      <Image
+        src='/images/random.jpeg'
+        alt='William Cameron'
+        fill
+        className='object-cover'
+      />
+    </div>
+    <div className='flex flex-col ml-2'>
+    <span className='font-medium'>John Doe</span>
+    <p className='text-[#66666E]'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur ratione amet tempore labore praesentium veritatis similique obcaecati, omnis, molestias excepturi deleniti soluta iste sint possimus aspernatur totam porro mollitia rem.</p>
+    </div>
+
+</div>
+</div>
+<div className='flex flex-row mt-2 pl-20 gap-2 font-semibold text-[#39393D]'>
+<ChevronDown />
+<span>2 Replies</span>
+<Separator orientation='vertical' className='h-4 hidden sm:block  md:h-7 bg-[#E3E3E4] w-[1px] ' />
+<span>Reply</span>
+</div>
 </div>
 </div>
   {/* separator */}
-<div className="hidden md:block absolute top-0 bottom-0 left-[82%]">
-    <div className="bg-[#E3E3E4] w-[2px] mt-60 h-[800px]" />
-  </div>
-  
-  {/* Rest of content */}
-  <div className="md:w-[20%] w-full">
-    {/* Other content */}
-  </div>
+  <div className="w-64 bg-white border-l h-screen p-4">
+        <div className="mb-6">
+            <h4 className="font-bold mb-4">Contacts</h4>
+            <div className="space-y-4">
+                <div>
+                    <div className="font-semibold">Neha</div>
+                    <div className="text-gray-500">CEO</div>
+                    <div className="flex items-center">
+                        <i className="fas fa-phone mr-2"></i>
+                        <span>9876543210</span>
+                    </div>
+                    <div className="flex items-center">
+                        <i className="fas fa-envelope mr-2"></i>
+                        <span>veryveryverylongemail@talentolease.co</span>
+                    </div>
+                </div>
+                <div>
+                    <div className="font-semibold">Jenny Wilson</div>
+                    <div className="flex items-center">
+                        <i className="fas fa-phone mr-2"></i>
+                        <span>9876543210</span>
+                    </div>
+                    <div className="flex items-center">
+                        <i className="fas fa-envelope mr-2"></i>
+                        <span>JennyWilson@talentolease.co</span>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        </div>
+
+  {/* <div classNameName="flex flex-col md:flex-row md:items-stretch gap-4 w-full md:px-10 mt-4 items-stretch">
+    
+    <div classNameName=" md:w-[78%]  w-full">
+<div>Contacts
+    <div classNameName='flex flex-row mt-2 gap-2 font-semibold text-[#39393D]'>
+    <span>Neha</span>
+    <span> CEO</span>
+    </div>
+
+</div>
+ 
+
+</div>
+</div> */}
  
 
 
 </div>
+
 
    </div>
 
