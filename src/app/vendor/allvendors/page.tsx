@@ -1,7 +1,7 @@
 'use client'
 import Header from '@/app/header'
 import Navbar from '@/app/navbar'
-import { ArrowDownRight, ArrowUpRight, AtSign, ChartNoAxesColumn, ChevronDown, ChevronRight, Dot, ImagePlay, MapPin, MessageCircleMore, Pencil, Phone, Store, TrendingUp, Undo2, UserRound, WalletCards } from 'lucide-react'
+import { ArrowDownRight, ArrowDownToLine, ArrowUpRight, AtSign, ChartNoAxesColumn, ChevronDown, ChevronRight, Dot, ImagePlay, MapPin, MessageCircleMore, MoveDiagonal, Paperclip, Pencil, Phone, Store, TrendingUp, Undo2, UserRound, UserRoundCog, WalletCards } from 'lucide-react'
 import React from 'react'
 import Image from "next/image" 
 import { Separator } from '@radix-ui/react-separator'
@@ -453,7 +453,7 @@ const AllVendor = () => {
 </div>
 </div>
   {/* separator */}
-  <div className="w-64 border-l h-screen p-4 text-[#84848C] font-light text-sm">
+  <div className="border-hidden w-64 border-l h-screen p-4 text-[#84848C] font-light text-sm">
         <div className="mb-6 ">
             <h4 className="mb-4 text-[13px]">Contacts</h4>
             <div className="space-y-4">
@@ -484,45 +484,57 @@ const AllVendor = () => {
                 </div>
                 <div className='border-t border-b pt-2'>
                 <div className='text-[#84848C] font-light text-sm' >
-                    <div className="text-black">Details</div>
-                    <div className="flex items-center">
-                    <MapPin className='w-4 h-4 pr-1'/>
-                        <span>New Delhi</span>
+                    <div className=" pb-3">Details</div>
+                    <div className="flex items-center p-2">
+                    <MapPin className='w-5 h-5 pr-1'/>
+                        <span className="text-black">New Delhi</span>
                     </div>
-                    <div className="flex items-center">
-                    <WalletCards className='w-4 h-4 pr-1'/>
-                        <span>New Delhi</span>
+                    <div className="flex items-center p-2">
+                    <WalletCards className='w-5 h-5 pr-1'/>
+                        <span className="text-black">30 Days</span>
                     </div>
-                    <div className="flex items-center">
-                    <UserRound className='w-4 h-4 pr-1'/>
-                        <span>New Delhi</span>
+                    <div className="flex items-center p-2">
+                    <UserRound className='w-5 h-5 pr-1'/>
+                        <span className="text-black">182 resources</span>
                     </div>
-                    <div className="flex items-center">
-                    <Phone className='w-4 h-4 pr-1'/>
-                        <span>New Delhi</span>
+                    <div className="flex items-center p-2">
+                    <UserRoundCog  className='w-5 h-5 pr-1'/>
+                    <div className='relative w-8 h-8 md:w-6 md:h-6 rounded-full overflow-hidden mx-2 '>
+      <Image
+        src='/images/random.jpeg'
+        alt='William Cameron'
+        fill
+        className='object-cover'
+      />
+    </div>
+                        <span className="text-black">Somil Singh</span>
                     </div>
                     
                 </div>
+                </div>
+                <div>
+                    <span>NDA</span>
+                    <div className='border-[#E3E3E4] border-1 rounded-md p-2'>
+                        <div className='flex flex-row gap-1'>
+                        <div className='bg-[#E8F0FE] text-[#1A68F3] rounded-md py-2 px-2'><Paperclip /></div>
+                        <div className='flex flex-col font-bold text-[#39393D]'>
+                        Agreement.pdf
+                        <span className='font-light text-[#84848C]'>246 KB</span>
+                        </div>
+                        <div className='w-9 h-9 flex flex-row text-[#39393D] items-center ml-4 gap-1'>
+                        <MoveDiagonal />
+                        <ArrowDownToLine />
+                        </div>
+                        </div>
+                        </div>
+                       
                 </div>
             </div>
         </div>
 
         </div>
 
-  {/* <div classNameName="flex flex-col md:flex-row md:items-stretch gap-4 w-full md:px-10 mt-4 items-stretch">
-    
-    <div classNameName=" md:w-[78%]  w-full">
-<div>Contacts
-    <div classNameName='flex flex-row mt-2 gap-2 font-semibold text-[#39393D]'>
-    <span>Neha</span>
-    <span> CEO</span>
-    </div>
 
-</div>
- 
-
-</div>
-</div> */}
  
 
 
