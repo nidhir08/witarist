@@ -1,7 +1,7 @@
 'use client'
 import Header from '@/app/header'
 import Navbar from '@/app/navbar'
-import { ArrowDownRight, ArrowUpRight, ChartNoAxesColumn, ChevronDown, ChevronRight, Dot, ImagePlay, MapPin, Pencil, Store, TrendingUp, Undo2, UserRound, WalletCards } from 'lucide-react'
+import { ArrowDownRight, ArrowUpRight, ChartNoAxesColumn, ChevronDown, ChevronRight, Dot, ImagePlay, MapPin, MessageCircleMore, Pencil, Store, TrendingUp, Undo2, UserRound, WalletCards } from 'lucide-react'
 import React from 'react'
 import Image from "next/image" 
 import { Separator } from '@radix-ui/react-separator'
@@ -394,11 +394,38 @@ const AllVendor = () => {
           </Button>
         </div>
 </div>
-    </div>
+    </div>   
   </div>
-</div>
 
-  
+{/* textarea  */}
+  <div className='flex flex-col m-3'>
+<div className='flex flex-row font-bold text-medium gap-3'>
+   <span> Notes</span>
+   <div className='flex flex-row text-[#84848C] gap-1 font-light'>
+   <MessageCircleMore className='w-5 h-5 text-[#84848C]'/>
+   <span>0 comments</span>
+    </div>
+    <div className="ml-auto mt-2 sm:mt-0 flex items-center">
+            <div className="flex items-center border border-[#E2E8F0] bg-[#FFFFFF] text-[#475569] font-light rounded-lg px-3 py-1 text-sm whitespace-nowrap cursor-pointer">
+              <span>Latest</span>
+              <ChevronDown className="ml-1 w-4 h-4" />
+            </div>
+          </div>
+</div>
+<div className='bg-[#F4F4F4] min-h-[100px] w-full mt-2 p-4 rounded-lg flex justify-between items-start'>
+  <div className="flex-grow">
+    <textarea 
+      placeholder="Add a comment" 
+      className="bg-transparent w-full h-full outline-none resize-none"
+    />
+  </div>
+  <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors mt-10">
+    Publish
+  </button>
+</div>
+</div>
+</div>
+  {/* separator */}
 <div className="hidden md:block absolute top-0 bottom-0 left-[82%]">
     <div className="bg-[#E3E3E4] w-[2px] mt-60 h-[800px]" />
   </div>
