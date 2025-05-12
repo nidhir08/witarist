@@ -35,7 +35,7 @@ const AllVendor = () => {
         //labels: ['Net 15', 'Net 30', 'Net 30','Net 30','Net 30'],
       };
   return (
-    <div className='flex flex-col min-h-screen'>
+    <div className='flex flex-col min-h-screen '>
 
     <div className='flex flex-row'>
         <Navbar />
@@ -110,7 +110,7 @@ const AllVendor = () => {
   </div>
 
 </div>
-<div className='flex flex-row sm:flex-row gap-4 sm:items-center mt-3 md:text-sm font-medium text-gray-600 md:px-10 sm:px-6'>
+<div className='flex flex-row sm:flex-row gap-4 sm:items-center mt-3 md:text-sm font-medium text-gray-600 md:px-10 sm:px-6 m-3 sm:m-2'>
 <div className="flex items-center">
 <ChartNoAxesColumn className="w-4 h-4 text-[#39393D] mr-1" />
                 <span className='text-[#171718]'>Overview </span>
@@ -132,7 +132,7 @@ const AllVendor = () => {
               
 </div>
 {/* resource */}
-<div className="px-4 md:px-10 py-4">
+<div className="px-4 md:px-10 py-4 ">
           <div className="relative h-4 flex items-center">
             {/* Gray background separator */}
             <div className="absolute h-[1px] bg-[#E3E3E4] w-70"></div>
@@ -142,26 +142,23 @@ const AllVendor = () => {
 </div>
 
 {/* left block  */}
-<div className='flex flex-row'>
+<div className='flex flex-row m-3 sm:m-2'>
 <div className="md:w-[78%] w-full  ">
 <div className="flex flex-col  md:items-stretch gap-4 w-full ">
-<div className="flex flex-row md:flex-row md:items-stretch gap-4 w-full md:px-10 mt-4 items-stretch">
+<div className="flex flex-row md:flex-row md:items-stretch gap-4 w-full md:px-10 mt-4 items-stretch ">
 
-            <div className=" w-full  ">
+            <div className=" w-full ">
 
               <div className=" bg-[#D9D9D9]  rounded-lg sm:rounded-xl md:rounded-2xl p-2 ">
-                <div className="flex flex-row sm:flex-row justify-between gap-3 overflow-x-auto "> 
+                <div className="flex flex-row sm:flex-row justify-between gap-2 overflow-x-auto "> 
                     {/* change this to flex-col */}
                   {/* Card 1 */}
-                  <div className="flex flex-col max-w-[200px] md:w-[200px] min-w-[140px] sm:w-[150px] bg-white border border-[#E5E5E5] rounded-[15px] shadow-sm p-3">
+                  <div className="flex flex-1 flex-col  bg-white border border-[#E5E5E5] rounded-[15px] shadow-sm p-3">
                     {/* Card Header */}
                     <div className="flex justify-between items-center">
                       <div>
-                        <p className="text-[13px] text-[#475569] font-medium">Vendors Added</p>
+                        <p className="text-lg text-[#475569] font-medium">Vendors Added</p>
                         <h2 className="text-black font-bold text-xl mt-1">578</h2>
-                      </div>
-                      <div className="flex items-center justify-center w-[35px] h-[35px] bg-[#F5F5F5] rounded-md flex-shrink-0">
-                        <Store className="w-5 h-5 text-[#475569]" />
                       </div>
                     </div>
                     
@@ -180,19 +177,14 @@ const AllVendor = () => {
                   </div>
                   
                   {/* Card 2 */}
-                  <div className="flex flex-col max-w-[200px] md:w-[200px] min-w-[140px] sm:w-[150px] bg-white border border-[#E5E5E5] rounded-[15px] shadow-sm p-3">
+                  <div className="flex flex-1 flex-col  bg-white border border-[#E5E5E5] rounded-[15px] shadow-sm p-3">
                     {/* Card Header */}
                     <div className="flex justify-between items-center">
                       <div>
-                        <p className="text-[13px] text-[#475569] font-medium">Total Alignments</p>
+                        <p className="text-lg text-[#475569] font-medium">Total Alignments</p>
                         <h2 className="text-black font-bold text-xl mt-1">34</h2>
                       </div>
-                      <div className="flex items-center justify-center w-[35px] h-[35px] bg-[#F5F5F5] rounded-md flex-shrink-0">
-                        <svg className="w-5 h-5 text-[#475569]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                          <rect x="2" y="2" width="20" height="20" rx="2" ry="2" />
-                          <path d="M8 10v6M16 10v6M12 6v10" />
-                        </svg>
-                      </div>
+                    
                     </div>
                     
                     {/* Separator */}
@@ -210,16 +202,14 @@ const AllVendor = () => {
                   </div>
                   
                   {/* Card 3 */}
-                  <div className="flex flex-col max-w-[200px] md:w-[200px] min-w-[140px] sm:w-[150px] bg-white border border-[#E5E5E5] rounded-[15px] shadow-sm p-3">
+                  <div className="flex flex-1 flex-col  bg-white border border-[#E5E5E5] rounded-[15px] shadow-sm p-3">
                     {/* Card Header */}
                     <div className="flex justify-between items-center">
                       <div>
-                        <p className="text-[13px] text-[#475569] font-medium">Deployment</p>
+                        <p className="text-lg text-[#475569] font-medium">Deployment</p>
                         <h2 className="text-black font-bold text-xl mt-1">1</h2>
                       </div>
-                      <div className="flex items-center justify-center w-[35px] h-[35px] bg-[#F5F5F5] rounded-md flex-shrink-0">
-                        <Store className="w-5 h-5 text-[#475569]" />
-                      </div>
+    
                     </div>
                     
                     {/* Separator */}
@@ -237,18 +227,12 @@ const AllVendor = () => {
                   </div>
                   
                   {/* Card 4 */}
-                  <div className="flex flex-col max-w-[200px] md:w-[200px] min-w-[140px] sm:w-[150px] bg-white border border-[#E5E5E5] rounded-[15px] shadow-sm p-3">
+                  <div className="flex flex-1 flex-col  bg-white border border-[#E5E5E5] rounded-[15px] shadow-sm p-3">
                     {/* Card Header */}
                     <div className="flex justify-between items-center">
                       <div>
-                        <p className="text-[13px] text-[#475569] font-medium">Price Range </p>
+                        <p className="text-lg text-[#475569] font-medium">Price Range </p>
                         <h2 className="text-black font-bold text-xl mt-1">Min - Max </h2>
-                      </div>
-                      <div className="flex items-center justify-center w-[35px] h-[35px] bg-[#F5F5F5] rounded-md flex-shrink-0">
-                        <svg className="w-5 h-5 text-[#475569]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                          <rect x="2" y="2" width="20" height="20" rx="2" ry="2" />
-                          <path d="M8 10v6M16 10v6M12 6v10" />
-                        </svg>
                       </div>
                     </div>
                     
@@ -289,7 +273,7 @@ const AllVendor = () => {
           <div className="flex flex-row text-sm font-medium text-[#475569] border-2 border-[#E2E8F0] rounded-[15px] w-full sm:w-[275px] bg-white overflow-hidden">
             <div className="px-3 py-2 bg-[#F5F5F5] rounded-l-[14px]">Headquarter</div>
             <Separator orientation="vertical" className="h-auto w-[2px] bg-[#E5E5E5]" />
-            <div className="px-3 py-2">Service Location</div>
+            <div className=" px-3 py-2 whitespace-nowrap">Service Location</div>
           </div>
         </div>
 
@@ -453,7 +437,8 @@ const AllVendor = () => {
 </div>
 </div>
   {/* separator */}
-  <div className="border-hidden w-64 border-l h-screen p-4 text-[#84848C] font-light text-sm">
+  <div className="w-64 h-screen p-4 text-[#84848C] font-light text-sm border-l-0 md:border-l border-[#E5E5E5] ">
+
         <div className="mb-6 ">
             <h4 className="mb-4 text-[13px]">Contacts</h4>
             <div className="space-y-4">
