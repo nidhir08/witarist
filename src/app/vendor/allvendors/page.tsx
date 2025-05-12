@@ -1,7 +1,7 @@
 'use client'
 import Header from '@/app/header'
 import Navbar from '@/app/navbar'
-import { ArrowDownRight, ArrowUpRight, ChartNoAxesColumn, ChevronDown, ChevronRight, Dot, ImagePlay, MapPin, MessageCircleMore, Pencil, Store, TrendingUp, Undo2, UserRound, WalletCards } from 'lucide-react'
+import { ArrowDownRight, ArrowUpRight, AtSign, ChartNoAxesColumn, ChevronDown, ChevronRight, Dot, ImagePlay, MapPin, MessageCircleMore, Pencil, Phone, Store, TrendingUp, Undo2, UserRound, WalletCards } from 'lucide-react'
 import React from 'react'
 import Image from "next/image" 
 import { Separator } from '@radix-ui/react-separator'
@@ -453,32 +453,56 @@ const AllVendor = () => {
 </div>
 </div>
   {/* separator */}
-  <div className="w-64 bg-white border-l h-screen p-4">
-        <div className="mb-6">
-            <h4 className="font-bold mb-4">Contacts</h4>
+  <div className="w-64 border-l h-screen p-4 text-[#84848C] font-light text-sm">
+        <div className="mb-6 ">
+            <h4 className="mb-4 text-[13px]">Contacts</h4>
             <div className="space-y-4">
                 <div>
-                    <div className="font-semibold">Neha</div>
+                    <div className=" flex flex-row text-black gap-4">Neha
                     <div className="text-gray-500">CEO</div>
+                    </div>
+                   
                     <div className="flex items-center">
-                        <i className="fas fa-phone mr-2"></i>
-                        <span>9876543210</span>
+                    <Phone className='w-4 h-4 pr-1'/>
+                    <span>9876543210</span>
                     </div>
                     <div className="flex items-center">
-                        <i className="fas fa-envelope mr-2"></i>
-                        <span>veryveryverylongemail@talentolease.co</span>
+                    <span className='pr-1'>@</span>
+                    <span>veryvery@talentolease.co</span>
                     </div>
                 </div>
-                <div>
-                    <div className="font-semibold">Jenny Wilson</div>
+                <div className='text-[#84848C] font-light' >
+                    <div className="text-black">Jenny Wilson</div>
                     <div className="flex items-center">
-                        <i className="fas fa-phone mr-2"></i>
+                    <Phone className='w-4 h-4 pr-1'/>
                         <span>9876543210</span>
                     </div>
                     <div className="flex items-center">
-                        <i className="fas fa-envelope mr-2"></i>
+                    <span className='pr-1'>@</span>
                         <span>JennyWilson@talentolease.co</span>
                     </div>
+                </div>
+                <div className='border-t border-b pt-2'>
+                <div className='text-[#84848C] font-light text-sm' >
+                    <div className="text-black">Details</div>
+                    <div className="flex items-center">
+                    <MapPin className='w-4 h-4 pr-1'/>
+                        <span>New Delhi</span>
+                    </div>
+                    <div className="flex items-center">
+                    <WalletCards className='w-4 h-4 pr-1'/>
+                        <span>New Delhi</span>
+                    </div>
+                    <div className="flex items-center">
+                    <UserRound className='w-4 h-4 pr-1'/>
+                        <span>New Delhi</span>
+                    </div>
+                    <div className="flex items-center">
+                    <Phone className='w-4 h-4 pr-1'/>
+                        <span>New Delhi</span>
+                    </div>
+                    
+                </div>
                 </div>
             </div>
         </div>
