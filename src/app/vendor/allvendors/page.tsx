@@ -142,10 +142,10 @@ const AllVendor = () => {
 </div>
 
 {/* left block  */}
-<div className='flex flex-row m-3 sm:m-2'>
-<div className="md:w-[78%] w-full  ">
+<div className='flex flex-row m-2 sm:m-2'>
+<div className="md:w-[70%] w-full  ">
 <div className="flex flex-col  md:items-stretch gap-4 w-full ">
-<div className="flex flex-row md:flex-row md:items-stretch gap-4 w-full md:px-10 mt-4 items-stretch ">
+<div className="flex flex-row md:flex-row md:items-stretch gap-4 w-full md:px-4 mt-4 items-stretch ">
 
             <div className=" w-full ">
 
@@ -257,7 +257,7 @@ const AllVendor = () => {
 
 {/* resources allocation */}
   {/* Resource Allocation Section */}
-<div className="flex flex-row md:flex-row md:items-stretch gap-4 w-full md:px-10 mt-4 items-stretch">
+<div className="flex flex-row md:flex-row md:items-stretch gap-2 w-full md:px-4 mt-4 items-stretch">
     
 <div className="  w-full">
   {/* Outer gray container */}
@@ -268,12 +268,12 @@ const AllVendor = () => {
       {/* Location Distribution Box */}
       <div className="bg-white border border-[#E5E5E5] rounded-[15px] flex flex-col text-[#475569] font-medium p-4 w-full md:w-2/3 ">
         {/* Header with toggle */}
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
-          <h2 className="text-lg text-black text-nowrap">Resources Location Distribution</h2>
-          <div className="flex flex-row text-sm font-medium text-[#475569] border-2 border-[#E2E8F0] rounded-[15px] w-full sm:w-[275px] bg-white overflow-hidden">
-            <div className="px-3 py-2 bg-[#F5F5F5] rounded-l-[14px]">Headquarter</div>
+        <div className="flex flex-row sm:flex-row sm:items-center justify-between gap-3 mb-4">
+          <h2 className="text-medium text-black text-nowrap">Resources Location Distribution</h2>
+          <div className="flex flex-row text-sm font-medium text-[#475569] border-2 border-[#E2E8F0] rounded-[15px] w-full sm:w-[275px] bg-white overflow-hidden whitespace-nowrap">
+            <div className="px-2 py-2 bg-[#F5F5F5] rounded-l-[14px]">Headquarter</div>
             <Separator orientation="vertical" className="h-auto w-[2px] bg-[#E5E5E5]" />
-            <div className=" px-3 py-2 whitespace-nowrap">Service Location</div>
+            <div className=" px-2 py-2 whitespace-nowrap">Service Location</div>
           </div>
         </div>
 
@@ -290,7 +290,7 @@ const AllVendor = () => {
     <div className="w-3 h-3 mt-1 bg-[#1E293B] rounded-full" />
     <div>
       <p className="font-bold">Lucknow (78%)</p>
-      <p className="font-light mt-1">1,358 total ventures</p>
+      <p className="font-light mt-1 nowhite whitespace-nowrap">1,358 total ventures</p>
     </div>
   </div>
 
@@ -327,13 +327,13 @@ const AllVendor = () => {
           </div>
 
           {/* Chart Labels */}
-          <div className="flex flex-row gap-2 text-sm text-[#475569] md:ml-25">
+          <div className="flex flex-row gap-2 text-sm text-[#475569]  ml:15 md:ml-22 sm:ml-20 ">
             <div className="flex items-center gap-2">
               <div className="w-3 h-3 bg-[#1E293B] rounded-[3px]" /> Onsite
             </div>
             <div className="flex items-center gap-2">
               <div className="w-3 h-3 bg-[#47505F] rounded-[3px]" /> Hybrid
-            </div>
+            </div> 
             <div className="flex items-center gap-2">
               <div className="w-3 h-3 bg-[#1E293B33] rounded-[3px]" /> Remote
             </div>
@@ -387,6 +387,7 @@ const AllVendor = () => {
 </div>
 {/* textarea  */}
   <div className='flex flex-col m-3'>
+  <div className="flex flex-col md:flex-col md:items-stretch gap-4 w-full md:px-10 mt-4 items-stretch ">
 <div className='flex flex-row font-bold text-medium gap-3'>
    <span> Notes</span>
    <div className='flex flex-row text-[#84848C] gap-1 font-light'>
@@ -436,11 +437,12 @@ const AllVendor = () => {
 </div>
 </div>
 </div>
+</div>
   {/* separator */}
-  <div className="w-64 h-screen p-4 text-[#84848C] font-light text-sm border-l-0 md:border-l border-[#E5E5E5] ">
+  <div className="w-76 h-screen p-4 text-[#84848C] font-light text-medium border-l-0 md:border-l border-[#E5E5E5] ">
 
         <div className="mb-6 ">
-            <h4 className="mb-4 text-[13px]">Contacts</h4>
+            <h4 className="mb-4 text-[14px]">Contacts</h4>
             <div className="space-y-4">
                 <div>
                     <div className=" flex flex-row text-black gap-4">Neha
